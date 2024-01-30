@@ -1,5 +1,6 @@
 # author: 0-8-4
 # date： 24-11-2022 18：34 AEDT
+# last_update: 13-11-2023 22:57 AEDT
 #
 # This script is used to automatically build docker image and
 # push to DockerHub when every new release is published
@@ -9,7 +10,6 @@ name: DockerHub CI
 on:
   release:
     types: [published]
-  workflow_dispatch:
 
 env:
   DOCKERHUB_REPO: o1si/miui-auto-tasks
@@ -41,6 +41,7 @@ jobs:
           platforms: |
             linux/amd64
             linux/arm64
+            linux/arm/v7 
           tags: |
             ${{ env.DOCKERHUB_REPO }}:latest
             ${{ env.DOCKERHUB_REPO }}:${{ github.event.release.tag_name }}

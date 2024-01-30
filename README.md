@@ -1,8 +1,11 @@
 # MIUI Task
 一个适用于 社区 4.0 模拟网络功能请求的脚本
 
-[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) ![GitHub](https://img.shields.io/github/license/0-8-4/miui-auto-tasks) 
-![Python](https://img.shields.io/badge/python-3.7+-blue) ![DockerHub](https://github.com/0-8-4/miui-auto-tasks/actions/workflows/docker-image.yml/badge.svg)
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) 
+![GitHub](https://img.shields.io/github/license/0-8-4/miui-auto-tasks) 
+![Python](https://img.shields.io/badge/python-3.7+-blue) 
+![DockerHub](https://github.com/0-8-4/miui-auto-tasks/actions/workflows/docker-image.yml/badge.svg)
+[![CodeFactor](https://www.codefactor.io/repository/github/0-8-4/miui-auto-tasks/badge)](https://www.codefactor.io/repository/github/0-8-4/miui-auto-tasks)
 
 ## 我们收到反馈，部分用户已收到通知要求不得继续随意调用社区接口，否则社区账户将被永久封禁。<br/>鉴于以上情况，我们作为项目维护者建议停用脚本。<br/>感谢大家的支持，谢谢所有Star和Fork的人。
 
@@ -36,18 +39,12 @@
   ```bash
   pip install -r requirements.txt
   ```
-  注意：你可能需要使用管理员权限运行命令行
-
-
-### **快速上手**：
-
-1. 配置好 `config.yaml` 文件，并与 `miuitask.py` 文件放在同一个目录下 
-2. 使用终端 在 `miuitask.py` 所在目录下运行如下命令：
-
+  **推荐**
   ```bash
-  python3 miuitask.py
+  pip install pdm
+  pdm install
   ```
-
+  注意：你可能需要使用管理员权限运行命令行
 
 ### **项目介绍**：  
 - [x] 支持 多账号 配置
@@ -98,9 +95,25 @@ SOFTWARE.
 ```
 
 # **鸣谢**
+## 项目
+
+感谢由 [Xiaomi-Community-AutoTask](https://github.com/CMDQ8575/Xiaomi-Community-AutoTask) 启发的部分相关功能代码
+
 ## 社区
 
-本项目所有贡献者感谢所有Star了本项目的人
+感谢以下贡献者对本项目做出的贡献
+
+<a href="https://github.com/0-8-4/miui-auto-tasks/graphs/contributors">
+
+  <img src="https://contrib.rocks/image?repo=0-8-4/miui-auto-tasks" />
+
+</a>
+
+![Alt](https://repobeats.axiom.co/api/embed/073d4816527b3720a03cb44fa876fe0de0216124.svg "Repobeats analytics image")
+
+<br><br>
+
+### 本项目所有贡献者感谢所有Star了本项目的人
 
 [![Star History Chart](https://api.star-history.com/svg?repos=0-8-4/miui-auto-tasks&type=Date)](https://star-history.com/#0-8-4/miui-auto-tasks&Date)
 
